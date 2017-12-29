@@ -112,3 +112,16 @@
        text-align: center;  
     }
 }
+
+.movie_banner .fa-play-circle{
+    cursor: pointer;
+    position: absolute;
+    bottom : -42px;
+    right : 19%;
+    font-size:84px;
+    color:#04d2f2
+}
+
+.movie_banner .fa-play-circle:hover{
+    color: grey;
+}
