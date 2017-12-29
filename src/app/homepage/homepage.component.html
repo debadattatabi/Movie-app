@@ -1,0 +1,84 @@
+<div class="slide-wrapper">
+   <div id="homepage-feature" class="carousel slide">
+      <ol class="carousel-indicators">
+         <li data-target="#homepage-feature" data-slide-to="0" class="active"></li>
+         <li data-target="#homepage-feature" data-slide-to="1"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" *ngFor = "let m of latestMovies">
+
+         <div class="item active" style="background-image:url('http://lorempixel.com/1500/600/abstract')">
+            <div class="carousel-caption">
+               <h1>{{m.title}}</h1>
+               <p>{{m.description}}</p>
+               <p><a class="btn btn-large btn-primary" (click) = "onMoviePosterClick(m.id)">Know more</a>
+               </p>
+            </div>
+         </div>
+      </div>
+      <!-- /.carousel-inner -->
+      <!-- Controls -->
+      <a class="left carousel-control" href="#homepage-feature" data-slide="prev">
+        <span class="fa fa-angle-left"></span>
+      </a>
+      <a class="right carousel-control" href="#homepage-feature" data-slide="next">
+        <span class="fa fa-angle-right"></span>
+      </a>
+   </div>
+</div>
+
+<div class = "row">
+  <h1>OUT NOW</h1>
+  <div class="col-xs-12 slide-poster">
+    <div class = "movie-poster" *ngFor = "let m of latestMovies" (click) = "onMoviePosterClick(m.id)">
+      <img [src] = "m.posterImage" [alt]="m.title"/>
+      <div class="info">
+          <b>
+            <h6>{{m.title}}</h6>
+          </b>
+          <h6>
+            <span *ngFor = "let gener of m.gener ">{{gener}} </span>
+          </h6> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class = "row">
+  <h1 style="background-color: red;">TRAILORS</h1>
+  <div class="col-xs-12 slide-poster">
+    <div class = "movie-poster" *ngFor = "let m of latestMovies" (click) = "onMoviePosterClick(m.id)">
+      <img [src] = "m.posterImage" [alt]="m.title"/>
+      <div class="info">
+          <b>
+            <h6>{{m.title}}</h6>
+          </b>
+          <h6>
+            <span *ngFor = "let gener of m.gener ">{{gener}} </span>
+          </h6> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class = "row">
+  <div class="col-xs-12">
+    <h3> Other Movies</h3>
+  </div>  
+</div>
+<div class="row other-movie">
+  <div class = "col-xs-3 other-movie-poster" *ngFor = "let m of otherMovies" (click) = "onMoviePosterClick(m.id)">
+    <img [src] = "m.posterImage" [alt]="m.title"/>
+    <div class="info">
+      <b>
+        <h6>{{m.title}}</h6>
+      </b>
+      <h6>
+        <span *ngFor = "let gener of m.gener ">{{gener}} </span>
+      </h6> 
+    </div>
+  </div>
+</div> -->
+
+

@@ -1,0 +1,29 @@
+.navbar-default {
+    background: #000;
+    opacity: 0.4;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+
+.navbar-center
+{
+   position: absolute;
+   width: 100%;
+   left: 50%;
+ }
+
+.container{
+    margin-top: 55px;
+}
