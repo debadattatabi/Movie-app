@@ -174,3 +174,14 @@
     text-align: center;
     display: block;
 }
+
+.carousel-caption .fa-play-circle-o{
+    cursor: pointer;
+    position: absolute;
+    top : 44px;
+    left : 49%;
+    font-size:99px;
+    color:#fff;
+    opacity: 0.4;
+    z-index: -1;
+}

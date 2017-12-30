@@ -9,8 +9,10 @@
       <div class="carousel-inner">
 
         <div class="item active" style="background-image:url('assets/images/kingsman-banner.jpg')">
+          <!-- <a (click) = "onMoviePosterClick(1)"><i class="fa fa-play-circle-o"></i></a> -->
             <div class="carousel-caption">
-               <h1>Justice League</h1>
+              <a (click) = "onMoviePosterClick(1)"><i class="fa fa-play-circle-o"></i></a>
+               <h1>Kingsman: The Golden Circle</h1>
                <h4>
                   <span>Fantasy | Science fiction </span>
                 </h4> 
@@ -22,6 +24,7 @@
 
          <div class="item" *ngFor = "let m of latestMovies" style="background-image:url('assets/images/tiger-zinda-hai-banner.jpg')">
             <div class="carousel-caption">
+              <a (click) = "onMoviePosterClick(m.id)"><i class="fa fa-play-circle-o"></i></a>
                <h1>{{m.title}}</h1>
                <h4>
                   <span>{{m.gener}} </span>
@@ -43,7 +46,7 @@
    </div>
 </div>
 
-<div class = "row">
+<div class = "row" id="movies">
   <h1>OUT NOW</h1>
   <div class="col-xs-12 slide-poster">
     <div class = "movie-poster" *ngFor = "let m of latestMovies" (click) = "onMoviePosterClick(m.id)">
@@ -60,7 +63,7 @@
   </div>
 </div>
 
-<div class = "row">
+<div class = "row" id="shows">
   <h1 style="background-color: red;">TRAILORS</h1>
   <div class="col-xs-12 slide-poster">
     <div class = "movie-poster" *ngFor = "let m of otherMovies" 
