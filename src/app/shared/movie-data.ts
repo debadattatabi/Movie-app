@@ -75,7 +75,7 @@ export function movieDataFactory( backend: MockBackend,  options: BaseRequestOpt
     moviesDatabase[4] = {
         id:5,
         title: 'Thor Ragnarock',
-        description: "Imprisoned on the other side of the universe, the mighty Thor finds himself in a deadly gladiatorial contest that pits him against the Hulk, his former ally and fellow Avenger. Thor's quest for survival leads him in a race against time to prevent the all-powerful Hela from destroying his home world and the Asgardian civilization.",
+        description: "Imprisoned on the other side of the universe, the mighty Thor finds himself in a deadly gladiatorial contest that pits him against the Hulk, his former ally and fellow Avenger. Thor's quest for survival leads him in a race against time to prevent.",
         director: 'Taika Waititi',
         production: 'Marvel Studios',
         release: '10 October 2017',
@@ -135,7 +135,7 @@ export function movieDataFactory( backend: MockBackend,  options: BaseRequestOpt
     moviesDatabase[8] = {
         id:9,
         title: 'Thor Ragnarock',
-        description: "Imprisoned on the other side of the universe, the mighty Thor finds himself in a deadly gladiatorial contest that pits him against the Hulk, his former ally and fellow Avenger. Thor's quest for survival leads him in a race against time to prevent the all-powerful Hela from destroying his home world and the Asgardian civilization.",
+        description: "Imprisoned on the other side of the universe, the mighty Thor finds himself in a deadly gladiatorial contest that pits him against the Hulk, his former ally and fellow Avenger. Thor's quest for survival leads him in a race against time to prevent. ",
         director: 'Taika Waititi',
         production: 'Marvel Studios',
         release: '10 October 2017',
