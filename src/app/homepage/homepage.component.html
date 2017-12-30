@@ -6,9 +6,21 @@
       </ol>
 
       <!-- Wrapper for slides -->
-      <div class="carousel-inner" *ngFor = "let m of latestMovies">
+      <div class="carousel-inner">
 
-         <div class="item active" style="background-image:url('http://lorempixel.com/1500/600/abstract')">
+        <div class="item active" style="background-image:url('http://lorempixel.com/1500/600/abstract')">
+            <div class="carousel-caption">
+               <h1>Justice League</h1>
+               <h4>
+                  <span>Fantasy | Science fiction </span>
+                </h4> 
+               <p>Fueled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne enlists newfound ally Diana Prince to face an even greater threat. Together, Batman and Wonder Woman work quickly to recruit a team to stand against this newly awakened enemy.</p>
+               <p><a class="btn btn-large btn-primary" (click) = "onMoviePosterClick(1)">Know more</a>
+               </p>
+            </div>
+         </div>
+
+         <div class="item" *ngFor = "let m of latestMovies" style="background-image:url('http://lorempixel.com/1500/600/abstract')">
             <div class="carousel-caption">
                <h1>{{m.title}}</h1>
                <h4>
